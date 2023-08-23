@@ -1,9 +1,9 @@
 import './vendor';
 
 import styles from './app.module.css';
-import { makeItBlue } from './blue';
+import { drawSidebar } from './sidebar/sidebar';
 
-const root = document.getElementById('root');
-root.className = styles.blue;
+const body = document.body;
+body.className = styles.body;
 
-makeItBlue();
+drawSidebar();

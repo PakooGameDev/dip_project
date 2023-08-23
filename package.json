@@ -14,8 +14,7 @@
   },
   "browserslist": "defaults and supports es6-module",
   "dependencies": {
-    "bootstrap": "^4.6.0",
-    "react": "^18.2.0"
+    "bootstrap": "^4.6.0"
   },
   "devDependencies": {
     "@babel/core": "^7.22.10",
