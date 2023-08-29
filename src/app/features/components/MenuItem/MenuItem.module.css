@@ -1,0 +1,21 @@
+.MenuItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 18px;
+  font-weight: 600;
+
+  color: var(--system-colors-secondary, #80858b);
+}
+
+.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 18px;
+  font-weight: 600;
+
+  color: var(--system-colors-primary, #7b61ff);
+}

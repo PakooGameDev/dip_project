@@ -1,0 +1,26 @@
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--background-colors-graphite, #323537);
+  border-radius: 10px;
+  width: 1184px;
+  height: 56px;
+  flex-shrink: 0;
+  margin-top: 48px;
+}
+
+.input {
+  background: var(--background-colors-graphite, #323537);
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  color: var(--system-colors-secondary, #80858b);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 16px 0 16px 20px;
+}
+
+.filter {
+  padding: 16px 20px;
+}

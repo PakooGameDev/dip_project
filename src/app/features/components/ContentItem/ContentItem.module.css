@@ -1,0 +1,17 @@
+.content__banner {
+  flex-shrink: 0;
+}
+
+.content__banner img {
+  width: 266px;
+  height: 357px;
+  flex-shrink: 0;
+}
+
+.content__item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  height: 433px;
+  color: var(--contextual-colors-white, #ffffff);
+}
