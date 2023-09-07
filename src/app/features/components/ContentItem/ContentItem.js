@@ -1,16 +1,15 @@
 import styles from './ContentItem.module.css';
 
-export function ContentItem() {
+export function ContentItem(movie) {
   return `
-    <div class="${styles.item}">
+    <div id="content_item" class="${styles.item}">
       <div class="${styles.banner}">
-        <img src = ".\\assets\\images\\item.png" alt="bannerSVG"/>
+        <img src = "${movie.poster}" alt="bannerSVG"/>
+        <div class="${styles.rating}">${movie.rating.basic}</div>
       </div>
-      <span class="${styles.moviename}">Wonder Woman: 1984</span>
+      <span class="${styles.moviename}">${movie.name}</span>
       <div class="${styles.categories}">
-        <span class="categories">Adventure</span>
-        <span class="categories">Action</span>
-        <span class="categories">Fantasy</span>
+
       </div>
     </div>
   `;

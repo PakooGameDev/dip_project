@@ -9,7 +9,7 @@ export function AppMain({ page }) {
         Search: Search(),
         Auth: Auth({ Name: 'Artem Lapitsky' }),
       })}
-      ${AppContent(page)}
+      ${AppContent({ page })}
     </main>
   `;
 }

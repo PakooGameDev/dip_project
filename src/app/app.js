@@ -1,14 +1,29 @@
 import './vendor';
 import './index.css';
 
-import { AppLayout, AppMain, AppSidebar } from './components';
-
-function App() {
-  return AppLayout({
-    Sidebar: AppSidebar({ page: 'Home' }),
-    Content: AppMain({ page: 'Home' }),
-  });
-}
+import { HomePage, MoviePage } from './pages';
+import { ROUTES } from './routes';
+import { RouteService } from './services/router';
 
 const body = document.body;
-body.innerHTML = App();
+
+RouteService.init()
+  .on({
+    route: ROUTES.HOME.path,
+    run: () => {
+      body.innerHTML = HomePage({ page: 'Home' });
+    },
+  })
+  // .on({
+  //   route: ROUTES.AUTH.path,
+  //   run: () => {
+  //     body.innerHTML = Auth();
+  //   },
+  // })
+  .on({
+    route: ROUTES.MOVIE.path,
+    run: ({ id }) => {
+      body.innerHTML = MoviePage({ id });
+    },
+  })
+  .start();
