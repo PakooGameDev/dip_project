@@ -1,0 +1,35 @@
+.banner {
+  flex-shrink: 0;
+  position: relative;
+}
+
+.banner img {
+  width: 266px;
+  height: 357px;
+  flex-shrink: 0;
+}
+
+.rating {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  background-color: green !important;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  height: 433px;
+  color: var(--contextual-colors-white, #ffffff);
+}
+
+.moviename {
+  color: #ffffff;
+  line-height: normal;
+}
+
+.categories {
+  background-color: #ffffff;
+}

@@ -1,0 +1,7 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 56px;
+  margin-right: 64px;
+  flex-grow: 1; /* Остальной контент занимает свободное пространство */
+}
